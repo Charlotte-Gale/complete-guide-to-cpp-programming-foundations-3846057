@@ -7,9 +7,12 @@
 #include <string>
 
 std::vector<int> SelectKeyPoints(std::vector<int> distances, int checkpointIndex){
-    std::vector<int> result;
+    
+    const int start = distances[0];
+    const int checkpoint = distances[checkpointIndex];
+    const int end = distances.back();
 
-    // Write your code here
+    std::vector<int> result = { start, checkpoint, end };
     
     return result;
 }
